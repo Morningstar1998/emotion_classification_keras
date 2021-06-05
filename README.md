@@ -15,5 +15,7 @@ Para los scripts <Tipo_de_embedding>_dataset_<nombre_de_dataset> lo primero que 
 guardado el archivo glove.6B.100d.txt, en el caso de usar el embbeding de fasttext se debe c ambiar la linea f = open('/content/gdrive/MyDrive/Clasificador/wiki-news-300d-1M.vec', encoding='utf8') al path donde este tu archivo wiki-news-300d-1M.vec. Si se usa el dataset de hugging face, el codigo esta listo para correr, en el caso del dataset de IEMOCAP la linea "dataset=pd.read_csv('/content/gdrive/MyDrive/Clasificador/text_train.csv')" se debe de cambiar en donde se encuentre el alchivo text_train.cvs
 
 EXTRAS:
+
 Si se desea hacer inferencias solo con un tipo de embbeding el se puede duplicar el path en glove_dataset_dep , fasttext_dataset_dep. 
+
 En el caso de training tienen lineas comentadas en donde se crea el modelo. Se puede descomentar cualquier linea a decision suya para probar diferentes rendimiento, sin embargo la configuracion que tiene fue la que obtuvo mejor resultado
